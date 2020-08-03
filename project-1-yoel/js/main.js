@@ -1,6 +1,7 @@
 console.log("js linked working check");
 
 var count = 0;
+let outPut = document.getElementById("output");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("add").addEventListener("click", clickAdd);
@@ -13,14 +14,18 @@ function clickAdd() {
   updateDisplay();
 }
 
-function clickSubtract(outputValue, inputValue) {
+function clickSubtract() {
   var inputValue = Number(document.getElementById("input").value);
   count = count - inputValue;
   updateDisplay();
 }
 
 function updateDisplay() {
-  document.getElementById("output").textContent = count;
-
+  outPut.textContent = count;
   // change color to red if count is < 0
+  if (count < 0) {
+    outPut.style.color = "red";
+  } else {
+    outPut.style.color = "black";
+  }
 }
