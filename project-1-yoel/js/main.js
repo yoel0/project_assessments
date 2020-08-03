@@ -4,8 +4,10 @@ var count = 0;
 let outPut = document.getElementById("output");
 
 document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("add").addEventListener("click", clickAdd);
-  document.getElementById("subtract").addEventListener("click", clickSubtract);
+  document.getElementById("addition").addEventListener("click", clickAdd);
+  document
+    .getElementById("subtraction")
+    .addEventListener("click", clickSubtract);
 });
 
 function clickAdd() {

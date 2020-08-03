@@ -2,4 +2,39 @@
   margin: 0 auto;
   padding: 50px;
   text-align: center;
+  font-size: 80px;
+}
+
+#input {
+  text-align: center;
+}
+
+input[type="number"] {
+  padding: 20px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+input[type="number"]:focus {
+  border-color: #333;
+}
+
+input[type="submit"] {
+  padding: 20px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 50px;
+}
+
+#addition:hover {
+  background-color: peachpuff;
+}
+
+#subtraction:hover {
+  background-color: peachpuff;
 }
