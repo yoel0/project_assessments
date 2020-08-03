@@ -1,6 +1,11 @@
 body {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: sans-serif;
 }
+
 input {
   outline: none;
 }
@@ -13,6 +18,11 @@ input {
   font-weight: bold;
 }
 
+.matriX {
+  display: flex;
+  flex-direction: row;
+}
+
 .selectme {
   padding: 20px;
   border: 2px solid #ccc;
@@ -21,6 +31,7 @@ input {
   font-size: 50px;
   text-align: center;
   width: 150px;
+  margin: 0 10px 0 10px;
 }
 
 .selectme:focus {
