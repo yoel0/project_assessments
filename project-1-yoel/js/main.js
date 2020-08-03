@@ -1,26 +1,7 @@
-console.log("js linked working check");
+console.log("js link working check");
 
-var count = 0;
+let count = 0;
 let outPut = document.getElementById("output");
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("addition").addEventListener("click", clickAdd);
-  document
-    .getElementById("subtraction")
-    .addEventListener("click", clickSubtract);
-});
-
-function clickAdd() {
-  var inputValue = Number(document.getElementById("input").value);
-  count = count + inputValue;
-  updateDisplay();
-}
-
-function clickSubtract() {
-  var inputValue = Number(document.getElementById("input").value);
-  count = count - inputValue;
-  updateDisplay();
-}
 
 function updateDisplay() {
   outPut.textContent = count;
@@ -31,3 +12,22 @@ function updateDisplay() {
     outPut.style.color = "black";
   }
 }
+
+function clickAdd() {
+  let inputValue = Number(document.getElementById("input").value);
+  count += inputValue;
+  updateDisplay();
+}
+
+function clickSubtract() {
+  let inputValue = Number(document.getElementById("input").value);
+  count -= inputValue;
+  updateDisplay();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("addition").addEventListener("click", clickAdd);
+  document
+    .getElementById("subtraction")
+    .addEventListener("click", clickSubtract);
+});
