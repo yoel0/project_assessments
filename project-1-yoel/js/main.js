@@ -1,6 +1,6 @@
 console.log("js link working check");
 
-let count = 0;
+let count = 1;
 let outPut = document.getElementById("output");
 
 function updateDisplay() {
